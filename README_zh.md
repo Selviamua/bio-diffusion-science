@@ -115,4 +115,47 @@ bash scripts/science_demo_qm9.sh
 原始代码仓库：  
 - https://github.com/BioinfoMachineLearning/bio-diffusion
 
+
+## 8. 模型与数据下载
+
+如仅运行示例，可只下载 QM9 预训练模型检查点：
+链接（需手动复制到浏览器打开）：
+https://zenodo.org/record/13375913/files/model_1_epoch_979-EMA.ckpt?download=1
+
+下载后，将文件放入：
+checkpoints/QM9/Unconditional/
+并命名为：
+model_1_epoch_979-EMA.ckpt
+
+若需完整复现实验，可按原仓库 README 的说明下载 QM9（约100 GB）和 GEOM-Drugs（约500 GB）数据集以及对应模型检查点。
+
+## 9. 科研生态贡献与工作流图示
+
+以下 Mermaid 图示意了本项目在科研流程中的应用：
+
+```mermaid
+graph LR
+A[分子生成模型] --> B[性质优化]
+B --> C[分子筛选]
+C --> D[材料/药物研发]
+```
+
+## 10. 模型生成示例
+
+使用脚本 `scripts/science_demo_qm9.sh` 可快速运行 QM9 无条件分子生成示例：
+
+```bash
+bash scripts/science_demo_qm9.sh
+```
+
+该脚本将调用预训练模型生成一批 3D 分子，并将结果保存至 `./science_demo_outputs` 目录。
+
+## 11. 模型生成示例图片
+
+下图为使用 GCDM 模型生成并可视化的 QM9 分子示例（在本地运行 science_demo_qm9.sh 得到）：
+
+![demo1](img/demo_results/mol1.png)
+![demo2](img/demo_results/mol2.png)
+![demo3](img/demo_results/mol3.png)
+
 在此基础上的中文文档与轻量封装由个人维护，仅用于学习与科研目的。
