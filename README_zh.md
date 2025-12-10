@@ -154,8 +154,8 @@ bash scripts/science_demo_qm9.sh
 
 下图为使用 GCDM 模型生成并可视化的 QM9 分子示例（在本地运行 science_demo_qm9.sh 得到）：
 
-![demo1](img/demo_results/mol1.png)
-![demo2](img/demo_results/mol2.png)
-![demo3](img/demo_results/mol3.png)
+![demo1](img/43eb69dc-70a0-426f-91df-4d38fe2c093a.png)
+![demo2]img/072aa30b-79ea-4068-a168-4ee5ee94da0d.png)
+![demo3]img/fd6bcc30-dcb7-41ec-9f0e-279245939e8d.png)
 
 在此基础上的中文文档与轻量封装由个人维护，仅用于学习与科研目的。
