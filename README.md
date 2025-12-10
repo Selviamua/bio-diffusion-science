@@ -1,3 +1,6 @@
+> **Note**: This repository is a fork of the original Bio-Diffusion project, with additional Chinese documentation and a simplified demo script for the "AI+科研创新赛道" competition.  
+> 中文说明与参赛材料见：[README_zh.md](./README_zh.md) 与 [docs/competition_overview_zh.md](./docs/competition_overview_zh.md)。
+
 <div align="center">
 
 # Bio-Diffusion
